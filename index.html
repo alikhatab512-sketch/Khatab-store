@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>متجر خطاب</title>
+<link rel="manifest" href="manifest.json">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0a0a0a;color:#fff;font-family:sans-serif;padding:16px;padding-bottom:90px}
+.top{background:#151515;border:1px solid #333;border-radius:16px;padding:14px;display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;background:#22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;font-weight:900}
+.prod{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:14px;margin:10px 0;display:flex;justify-content:space-between;align-items:center}
+.prod button{background:#22c55e;border:0;color:#000;font-weight:bold;padding:8px 16px;border-radius:20px}
+.bar{position:fixed;bottom:0;left:0;right:0;background:#151515;border-top:1px solid #333;padding:14px;display:flex;justify-content:space-between;align-items:center}
+.bar button{background:#22c55e;border:0;padding:12px 20px;border-radius:12px;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="top"><div class="logo">K</div><div><b>خطاب العفيف</b><br><small style="color:#999">Sanaa - 776160272</small></div></div>
+<h3 style="color:#22c55e;text-align:center">Sales Cart Pro</h3>
+<div id="box"></div>
+<div class="bar"><div id="tot">الإجمالي: latex
+0&lt;/div&gt;&lt;button onclick="goWA()"&gt;واتساب مباشر&lt;/button&gt;&lt;/div&gt; &lt;script&gt; var prods=[ {name:"Laptop Dell - 500
+
+",price:500},
+{name:"iPhone 15 - 800latex
+",price:800}, {name:"سماعة - 50
+
+",price:50},
+{name:"سلك USB - 6.5latex
+",price:6.5}, {name:"باور بانك - 27
+
+",price:27},
+{name:"ماوس - 19latex
+",price:19} ]; var cart=[]; function draw(){ var html=""; for(var i=0;i&lt;prods.length;i++){ html+='&lt;div class="prod"&gt;&lt;span&gt;'+prods[i].name+'&lt;/span&gt;&lt;button onclick="add('+i+')"&gt;+&lt;/button&gt;&lt;/div&gt;'; } document.getElementById("box").innerHTML=html; } function add(i){ cart.push(prods[i]); var s=0; for(var j=0;j&lt;cart.length;j++){s+=cart[j].price;} document.getElementById("tot").innerHTML="الإجمالي: 
+
+"+s+" ("+cart.length+")";
+}
+function goWA(){
+if(cart.length==0){alert("أضف منتجات أولا");return;}
+var txt="طلب جديد%0A";
+var tot=0;
+for(var k=0;k<cart.length;k++){txt+=cart[k].name+"%0A";tot+=cart[k].price;}
+txt+="%0Aالإجمالي: $"+tot;
+location.href="https://wa.me/967776160272?text="+txt;
+}
+draw();
+</script>
+</body>
+</html>

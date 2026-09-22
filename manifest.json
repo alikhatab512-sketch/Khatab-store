@@ -1,0 +1,18 @@
+{
+"name": "متجر خطاب - Sales Cart Pro",
+"short_name": "متجر خطاب",
+"start_url": "/",
+"display": "standalone",
+"background_color": "#0a0a0a",
+"theme_color": "#22c55e",
+"scope": "/",
+"id": "/",
+"icons": [
+{
+"src": "https://cdn-icons-png.flaticon.com/512/5968/5968841.png",
+"sizes": "512x512",
+"type": "image/png",
+"purpose": "any maskable"
+}
+ ]
+}
